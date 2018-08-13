@@ -8,6 +8,8 @@ class QuestionsController < ApplicationController
 
 	def show
 		@question = Question.find(params[:id])
+		@answer  = Answer.new
+		@answers = @question.answers.all.order(created_at: :asc).limit(10)
 	end
 
 	def new
