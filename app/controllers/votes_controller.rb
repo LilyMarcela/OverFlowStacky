@@ -8,7 +8,7 @@ class VotesController < ApplicationController
 
 
 	def create
-		@vote = @votable.votes.create(user_id = current_user.id)
+		@vote = @votable.votes.create(user_id: current_user.id)
 		if @vote.save
 		  flash[:success] = 'Tu voto ha sido guardado'
 		end

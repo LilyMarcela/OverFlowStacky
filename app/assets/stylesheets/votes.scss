@@ -1,0 +1,26 @@
+.votes {
+  display: inline-block;
+  width: 40px;
+  vertical-align: top;
+  padding: 5px 5px 5px 0px;
+  font-size: 18px;
+  table {
+    width: 100%;
+    td {
+      display: block;
+      width: 35px;
+      height: 31px;
+      color: gray;
+      text-align: center;
+    }
+  }
+}
+
+.votes_on {
+  color: #F48024;
+  font-size: 22px;
+}
+.votes_off {
+  color: gray;
+  font-size: 22px;
+}

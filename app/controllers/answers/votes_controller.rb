@@ -3,7 +3,7 @@ class Answers::VotesController < VotesController
 
 
 	private
-     def set_votable
+    def set_votable
       @votable = Answer.find(params[:answer_id])
     end
 
